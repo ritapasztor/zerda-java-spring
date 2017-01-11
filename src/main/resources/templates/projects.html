@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Projects</title>
+</head>
+<body>
+<h1>Projects</h1>
+<p>Early access of Greenfox Academy Zerda Raptor Projects with tech tags</p>
+<ul th:each="project:${projects}">
+    <li th:text="${project.title + project.type}"></li>
+
+</ul>
+
+</body>
+</html>
